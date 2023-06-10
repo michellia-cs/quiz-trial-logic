@@ -1,0 +1,83 @@
+body {
+	font-size: 105%;
+	line-height: 150%;
+	font-family: 'Open Sans', sans-serif;
+	color: #424242;
+	background-color: #f1f1f1;
+}
+
+.quiz {
+	position: relative;
+	display: block;
+	max-width: 30em;
+	padding: 0;
+	margin: 0 auto;
+	background-color: #ffffff;
+	box-shadow: 0 .1em 1em hsla(0, 0%, 0%, .2);
+}
+.quiz div {
+	padding: .5em 1em 1em 1em;
+}
+.quiz picture {
+	max-width: 100%;
+	padding: 0;
+	margin: 0;
+}
+.quiz picture img {
+	width: 100%;
+	height: 33vh;
+	object-fit: cover;
+}
+.quiz div > span {
+	font-size: 80%;
+	text-transform: uppercase;
+	color: hsla(0, 0%, 70%, 1);
+}
+.quiz h2 {
+	font-size: 120%;
+	font-weight: 700;
+	margin: 0;
+}
+.quiz ul {
+	list-style: none;
+	padding: 0;
+	margin: 1em 0 0 0;
+}
+.quiz input[type='radio'] {
+	display: none;
+}
+.quiz label span {
+	display: block;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid #bdbdbd;
+	padding: .6em;
+	margin: 0;
+	text-align: left;
+	font-size: inherit;
+	background-color: transparent;
+	cursor: pointer;
+	user-select: none;
+	transition: .5s background-color ease-out;
+}
+.quiz label input:checked + span {
+	background-color: hsla(112, 45%, 47%, .2);
+}
+.quiz button {
+	display: block;
+	background-color: #ffffff;
+	outline: none;
+	border: 1px solid hsla(112, 45%, 47%, 1);
+	border-radius: .2em;
+	font-size: inherit;
+	line-height: 200%;
+	padding: 0 1em;
+	margin: 1em auto 0 auto;
+	cursor: pointer;
+	transition: .5s border-color ease-out, .5s opacity ease-out;
+}
+.quiz button:disabled {
+	opacity: .2;
+	border-color: hsla(0, 0%, 47%, 1);
+	transition: .1s border-color, .1s opacity;
+}
