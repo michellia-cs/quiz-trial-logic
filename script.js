@@ -1,118 +1,139 @@
 var __QUIZ = {
 	'intro' : {
-		'title' : 'Temukan Produk Eteris Sesuai Kebutuhanmu!',
+		'title' : 'Temukan kombinasi produk Eteris yang cocok untukmu!',
 		'text' : '',
 	},
     'questionnaire': {
         'currentQuestion': 0,
-        'numberOfQuestions': 4,
+        'numberOfQuestions': 5,
         'questions': {
             '1': {
-                'question': 'Apa yang sedang kamu butuhkan?',
+                'question': 'Dimana anda sering beraktivitas?',
                 'choices': {
                     '1': {
-                        'text': 'Penolak nyamuk',
+                        'text': 'Luar ruangan',
                         'score': [1, 0, 0, 0, 0]
                     },
                     '2': {
-                        'text': 'Mengurangi rasa gatal pada kulit',
+                        'text': 'Seimbang di dalam maupun luar ruangan',
                         'score': [0, 1, 0, 0, 0]
                     },
                     '3': {
-                        'text': 'Memperbaiki kualitas tidur',
+                        'text': 'Dalam ruangan',
                         'score': [0, 0, 0, 1, 0]
                     },
                     '4': {
-                        'text': 'Alasan kesehatan lainnya',
+                        'text': 'Tidak menentu',
                         'score': [0, 0, 0, 0, 1]
-                    },
-                    '5': {
-                        'text': 'Anti-aging',
-                        'score': [0, 0, 1, 0, 0]
                     }
                 }
             },
             '2': {
-                'question': 'Material apa yang menjadi preferensi anda?',
+                'question': 'Berapa lama anda tidur dalam sehari?',
                 'choices': {
                     '1': {
-                        'text': 'Lembab untuk kulit di muka',
-                        'score': [0, 0, 1, 0, 0]
+                        'text': 'Kurang dari 6 jam',
+                        'score': [1, 0, 0, 0, 0]
                     },
                     '2': {
-                        'text': 'Kental seperti lotion',
+                        'text': '6 - 7 jam',
                         'score': [0, 1, 0, 0, 0]
                     },
                     '3': {
-                        'text': 'Dapat dituang ke Humidifier menjadi Uap',
+                        'text': '8 jam',
                         'score': [0, 0, 0, 1, 0]
                     },
                     '4': {
-                        'text': 'Cair dan bisa dispray',
-                        'score': [1, 0, 0, 0, 0]
-                    }
+                        'text': 'Lebih dari 8 jam',
+                        'score': [0, 0, 0, 0, 1]
+                    },
                 }
             },
             '3': {
-                'question': 'Wenn Sie sich für eine Maßnahme entscheiden müssten…',
+                'question': 'Suasana apa yang anda sukai?',
                 'choices': {
                     '1': {
-                        'text': 'Kental seperti lotion',
-                        'score': [0, 1, 0, 0, 0]
-                    },
-                    '2': {
-                        'text': 'Mencegah Penuaan',
-                        'score': [0, 0, 1, 0, 0]
-                    },
-                    '3': {
-                        'text': 'Padat dan berbentuk pil ',
-                        'score': [0, 0, 0, 0, 1]
-                    }
-                }
-            },
-            '4': {
-                'question': 'Wo sehen Sie für sich selbst wichtiges Optimierungspotential?',
-                'choices': {
-                    '1': {
-                        'text': 'Cair dan bisa dispray',
+                        'text': 'Tenang di dalam kamar',
                         'score': [1, 0, 0, 0, 0]
                     },
                     '2': {
-                        'text': 'Dapat Tidur Nyenyak',
-                        'score': [0, 0, 0, 1, 0]
+                        'text': 'Suatu acara bersama teman maupun keluarga',
+                        'score': [0, 1, 0, 0, 0]
                     },
                     '3': {
-                        'text': 'Mudah ditelan dan mudah dicerna',
+                        'text': 'Lingkungan alam',
+                        'score': [0, 0, 0, 1, 0]
+                    },
+                    '4': {
+                        'text': 'Rumah yang nyaman',
                         'score': [0, 0, 0, 0, 1]
-                    }
+                    },
+                }
+            },
+            '4': {
+                'question': 'Apa yang sedang anda butuhkan?',
+                'choices': {
+                    '1': {
+                        'text': 'Memperbaiki kualitas tidur',
+                        'score': [1, 0, 0, 0, 0]
+                    },
+                    '2': {
+                        'text': 'Memberi hadiah untuk orang terdekat',
+                        'score': [0, 1, 0, 0, 0]
+                    },
+                    '3': {
+                        'text': 'Menyehatkan kulit dan anti-aging',
+                        'score': [0, 0, 0, 1, 0]
+                    },
+                    '4': {
+                        'text': 'Terlindung dari nyamuk',
+                        'score': [0, 0, 0, 0, 1]
+                    },
+                }
+            },
+            '5': {
+                'question': 'Apa perasaan yang anda cari pada suatu produk?',
+                'choices': {
+                    '1': {
+                        'text': 'Menenangkan',
+                        'score': [1, 0, 0, 0, 0]
+                    },
+                    '2': {
+                        'text': 'Membahagiakan',
+                        'score': [0, 1, 0, 0, 0]
+                    },
+                    '3': {
+                        'text': 'Menyehatkan',
+                        'score': [0, 0, 0, 1, 0]
+                    },
+                    '4': {
+                        'text': 'Melindungi',
+                        'score': [0, 0, 0, 0, 1]
+                    },
                 }
             }
         }
     },
     'results': {
-        'numberOfTypes': 5,
+        'numberOfTypes': 4,
         'questionScore': [],
         'finalScore': [0, 0, 0, 0, 0],
         'types': {
             '1': {
-                'name': 'Spray',
-                'text': 'Penolak nyamuk yang harum!',
+                'name': 'Sleep Set',
+                'text': 'Tenangkan pikiran dan tidur nyaman dengan ETERIS.',
             },
             '2': {
-                'name': 'Lotion',
-                'text': 'Melembabkan kulit, mengurangi gatal, dapat dibawa kemana saja!',
+                'name': 'Gift Set',
+                'text': 'Beri orang terdekat hadiah terbaik dengan ETERIS!',
             },
             '3': {
-                'name': 'Aromaterapi',
-                'text': 'Harum dan menenangkan pikiran untuk tidur.',
+                'name': 'Bodycare Set',
+                'text': 'Rawat dan jaga kesehatan kulitmu dengan ETERIS.',
             },
             '4': {
-                'name': 'Obat Herbal',
-                'text': 'Menjaga kesehatan dari penyakit.',
-            },
-            '5': {
-                'name': 'Serum Anti-aging',
-                'text': 'Sacha-Inchi si penyelamaat penuaan.',
+                'name': 'Mosquito-Free Set',
+                'text': 'Lindungi diri dari gigitan nyamuk dengan ETERIS!',
             }
         }
     }
@@ -154,6 +175,8 @@ function QUIZShowChoices() {
 	if(question != 0) {
 		QUIZElement('quiz_text').innerText = '';
 		QUIZElement('quiz_question').innerText = __QUIZ.questionnaire.questions[question].question;
+        QUIZElement('quiz_progress').innerText = ' Pertanyaan ' + __QUIZ.questionnaire.currentQuestion + ' dari ' + __QUIZ.questionnaire.numberOfQuestions;
+
 	
 		do {
 			choices += '<li><label><input type="radio" name="block" onclick="QUIZDoSomething(' + question + ', ' + choice + ')"><span>' + __QUIZ.questionnaire.questions[question].choices[choice].text + '</span></label></li>';
