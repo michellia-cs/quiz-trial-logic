@@ -28,15 +28,16 @@ body {
 	height: 33vh;
 	object-fit: cover;
 }
-.quiz div > span {
+#quiz_progress{
 	font-size: 80%;
-	text-transform: uppercase;
 	color: hsla(0, 0%, 70%, 1);
+	text-align: center;
 }
 .quiz h2 {
 	font-size: 120%;
 	font-weight: 700;
 	margin: 0;
+	text-align: center;
 }
 .quiz ul {
 	list-style: none;
